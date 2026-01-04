@@ -258,7 +258,7 @@
 				<a href="#lfh" onclick="showPubs(2)">Robot Learning from Humans</a> /
 				<a href="#hri" onclick="showPubs(2)">Human-Robot Interaction</a> /
 				<a href="#fm" onclick="showPubs(2)">Foundation Models for Robotics</a> /
-				<a href="#sp" onclick="showPubs(2)">Specialized Robots</a>
+				<a href="#sp" onclick="showPubs(2)">Specialized Robots</a> /
 				<a href="#ns" onclick="showPubs(2)">Neuroscience and Cognitive Science</a>
 			</font><br>
 			</small></small>
@@ -268,6 +268,9 @@
 
 		<script id="pubs_selected">
 			<font color="black">(*† indicates equal contribution)</font><br><hr>
+
+			{% include 2026-impasto.html %}
+			{% include 2026-dream2flow.html %}
 
 			{% include 2025-momagen.html %}
 			{% include 2025-com.html %}
@@ -304,6 +307,9 @@
 
 		<script id="pubs_by_date" language="text">
             <font color="black">(*† indicates equal contribution)</font><br><hr>
+			
+			{% include 2026-impasto.html %}
+			{% include 2026-dream2flow.html %}
 
 			{% include 2025-enact.html %}
 			{% include 2025-momagen.html %}
@@ -429,6 +435,7 @@
 			<h5>Foundation Models for Robotics</h5>
 			</div><br>
 
+			{% include 2026-dream2flow.html %}
 			{% include 2025-uad.html %}
 			{% include 2024-rekep.html %}
 			{% include 2024-acdc.html %}
@@ -439,6 +446,7 @@
 			<h5>Specialized Robots</h5>
 			</div><br>
 			
+			{% include 2026-impasto.html %}
 			{% include 2017-ball.html %}
 			{% include 2016-robocup.html %}
 			{% include 2017-robocup.html %}
