@@ -268,6 +268,21 @@
 		<script id="pubs_selected" language="text">
 			<font color="black">(*† indicates equal contribution)</font><br><hr>
 
+
+			<div id="papers"></div>
+
+			<script>
+			fetch("./enact.html")
+				.then(res => res.text())
+				.then(html => {
+				document
+					.getElementById("papers")
+					.insertAdjacentHTML("beforeend", html);
+				});
+			</script>
+
+
+
 		<div class="row">
 				<div class="col-md-3">
 					<div class="video-container" style="overflow: hidden;">
