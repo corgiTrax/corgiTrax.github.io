@@ -1,3 +1,5 @@
+---
+---
 
 <!DOCTYPE html>
 <html lang="en">
@@ -265,22 +267,10 @@
 
 		<div id="pubs"></div>
 
-		<script id="pubs_selected" language="text">
+		<script id="pubs_selected">
 			<font color="black">(*† indicates equal contribution)</font><br><hr>
 
-
-			<div id="papers"></div>
-
-			<script>
-			fetch("./enact.html")
-				.then(res => res.text())
-				.then(html => {
-				document
-					.getElementById("papers")
-					.insertAdjacentHTML("beforeend", html);
-				});
-			</script>
-
+		{% include enact.html %}
 
 
 		<div class="row">
